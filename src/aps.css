@@ -1,0 +1,62 @@
+.console-button {
+  background-image: url(/vite.svg);
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.get-state-button .adsk-button-icon {
+  background-color: #f4f4f4;
+  mask-image: url(/icons/save.svg);
+  mask-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.get-state-button .adsk-button-icon:hover {
+  background-color: #00bfff;
+  mask-image: url(/icons/save.svg);
+}
+
+
+.restore-state-button .adsk-button-icon {
+  background-color: #f4f4f4;
+  mask-image: url(/icons/restore.svg);
+  mask-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.restore-state-button .adsk-button-icon:hover {
+  background-color: #00bfff;
+  mask-image: url(/icons/restore.svg);
+}
+
+.panel_restore-state-button {
+  background-color: #3e95ff;
+  color: #000000;
+  padding: 2px 4px;
+  border-radius: 5px; 
+  border: white;
+}
+
+.panel_restore-state-button:hover {
+  background-color: #00bfff;
+}
+
+.pick-information-button .adsk-button-icon {
+  background-color: #f4f4f4;
+  mask-image: url(/icons/table.svg);
+  mask-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.pick-information-button .adsk-button-icon:hover {
+  background-color: #00bfff;
+  mask-image: url(/icons/table.svg);
+}
+
+/* #guiviewer3d-toolbar{
+  display: none;
+} */
