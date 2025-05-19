@@ -121,7 +121,8 @@ const FoldersPage = () => {
   };
 
   const runScript = async (id) => {
-    await fetch(`http://localhost:3000/scripts/${id}/execute`, {
+    console.log("Selected Folder", selectedFolderId);
+    await fetch(`http://localhost:3000/scripts/urn=dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6aGFja2Rldi9pZmNfZXhwb3J0Lmpzb24/execute/${selectedFolderId}`, {
       method: "POST",
       credentials: "include",
     });
