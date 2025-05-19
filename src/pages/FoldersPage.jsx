@@ -8,9 +8,7 @@ const TreeView = ({ node }) => {
 
   const { projectId } = useParams();
 
-  console.log("node",node);
-  const hasChildren = node.children.length > 0;
-  //const hasChildren = node.attributes.objectCount > 0;
+  const hasChildren = node.attributes.objectCount > 0;
   const isItem = node.type === "items";
 
   const handleToggle = async () => {
@@ -23,7 +21,7 @@ const TreeView = ({ node }) => {
       );
 
       const { data } = await response.json();
-      console.log(data);
+
       setChildren(data.folderContent);
 
       setIsOpen(!isOpen);
@@ -46,7 +44,7 @@ const TreeView = ({ node }) => {
         ) : (
           <img src="/document.svg" alt="document" className="size-4" />
         )}
-        {isItem && node.children.length && node.attributes.displayName !== undefined && node.attributes.displayName !== null? (
+        {isItem && node.attributes.objectCount ? (
           <div key={node.id}>{node.attributes.displayName}</div>
         ) : (
           <div key={node.id}>{node.attributes.displayName}</div>
