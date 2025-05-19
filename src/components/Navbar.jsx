@@ -22,13 +22,13 @@ export default function Navbar() {
         <div className="container mx-auto flex items-center justify-between p-4">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <img src="/horizontal_logo.svg" alt="" className="h-6" />
+            {/* <img src="/horizontal_logo.svg" alt="" className="h-6" /> */}
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             {token ? (
-              <Link to="/projects">Ver proyectos</Link>
+              <Link to="/projects">See projects</Link>
             ) : (
               <AutodeskLoginButton />
             )}

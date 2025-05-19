@@ -89,7 +89,7 @@ const FoldersPage = () => {
   return (
     <div className="max-w-screen-xl py-12 w-full mx-auto px-12">
       {isLoading ? (
-        <p>cargando...</p>
+        <p>Loading folders...</p>
       ) : (
         <>
           {folders.length > 0 ? (
